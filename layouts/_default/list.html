@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<div class="c2">
+
+<div class="main">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+  {{ end }}
+</div>
+<!--/.main-->
+
+<div class="sub">
+
+<h3>Menu</h3>
+<ul class="submenu">
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+
+<h3>Menu</h3>
+<ul class="submenu">
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+<li><a href="#">メニューサンプル</a></li>
+</ul>
+
+</div>
+<!--/.sub-->
+
+</div>
+<!--/.c2-->
+
+{{ end }}
